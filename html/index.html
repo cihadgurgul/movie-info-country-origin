@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TMDB + RESTCOUNTRIES API PROJECT</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body, form {
+        margin: 20px auto;
+        max-width: 800px;
+        overflow-x: hidden;
+      }
+      fieldset {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      input {
+        height: 22px;
+      }
+      label {
+        margin: 5px 10px 5px 0;
+      }
+      input#title {
+        margin: 0 10px;
+        flex-grow: 1;
+      }
+      input[type="submit"] {
+        display: block;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TMDB + RESTCOUNTRIES API PROJECT</h1>
+
+    <form action="/search" method="POST">
+      <fieldset>
+        <legend>Movie Search: Enter a movie title and learn about where the country where the movie was made!</legend>
+
+        <label for="title">Movie Title:</label>
+        <input id="title" name="title" type="text" placeholder="e.g. The Dictator" />
+      </fieldset>
+
+      <input type="submit" value="Search" />
+    </form>
+  </body>
+</html>
